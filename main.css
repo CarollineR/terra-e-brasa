@@ -1,3 +1,12 @@
+:root {
+--header-height: 96px;
+}
+
+section {
+scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+
 body {
     font-family: 'Shadows Into Light', cursive;
 }
@@ -8,15 +17,16 @@ body {
     font-size: 20px;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background-color: #FFFFFF;
     font-weight: bold;
     color: #8B4513;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
     color: #FFFFFF;
 }
 
@@ -27,7 +37,12 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #FFFFFF;
+    background-color: #4b2e05;
+}
+
+#menu-navegacao .nav-link:hover {
+    background-color: #D2B48C;
+    color: #8B4513;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -45,4 +60,23 @@ opacity: 1;
 
 .section-title span {
     color: #8B4513;
+}
+
+.text-colored {
+    color: #8B4513;
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: #8B4513;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.nav-cardapio .nav-link.active:hover {
+    background-color: #8B4513;
+    color: #4b2e05;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #dec8aa;
 }

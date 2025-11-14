@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="main.css">
 
 </head>
-<body>
+
+<body data-bs-spy="scroll" data-bs-target="#menu-navegacao" data-bs-offset="120" tabindex="0">
+
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand fw-bold m-0 section-title">Terra & Brasa</h1>
@@ -27,13 +29,13 @@
                             Sobre o Restaurante</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="bi bi-card-text me-2"></i>Nosso Cardápio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#eventos" class="nav-link">
                             <i class="bi bi-calendar-check"></i>
                             Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-2"></i>Nosso Cardápio</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -45,8 +47,6 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-        <section id="sobre-o-restaurante">
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
@@ -71,6 +71,8 @@
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
             </div>
         </div>
+
+    <section id="sobre-o-restaurante">
         <div class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
@@ -92,7 +94,130 @@
             </div>
         </div>
     </section>
+
+    <section id="eventos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center fw-bold">Para todas as ocasiões</h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored">
+                        <i class="bi bi-calendar-heart-fill"></i> Aniversários</h3>
+                    <p>No Terra & Brasa, cada aniversário é celebrado com sabor, elegância e aconchego. Nosso espaço foi pensado para transformar momentos especiais em lembranças inesquecíveis, com um ambiente sofisticado, atendimento acolhedor e um cardápio preparado para surpreender. Celebre sua nova fase com boa comida, boas companhias e a energia única que só o Terra & Brasa oferece.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored">
+                        <i class="bi bi-arrow-through-heart-fill"></i> Casamentos</h3>
+                    <p>O cenário perfeito para celebrar o amor. Com uma atmosfera encantadora e acolhedora, combinamos o charme rústico com o toque contemporâneo, criando o ambiente ideal para o grande dia. Nossa equipe cuida de cada detalhe — da decoração ao menu — para que o casal viva uma experiência inesquecível, repleta de emoção, sabor e beleza.</p>
+            </div>
+                <div class="col-md-4">
+                    <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored">
+                        <i class="bi bi-people fill"></i> confraternizações</h3>
+                    <p>O Terra & Brasa é o ambiente ideal para confraternizações que unam elegância, conforto e boa gastronomia. Nosso espaço foi projetado para receber empresas que desejam celebrar conquistas, fortalecer vínculos e proporcionar momentos de integração entre suas equipes. Com um cardápio cuidadosamente elaborado e atendimento personalizado, garantimos uma experiência marcante, à altura do profissionalismo e da identidade da sua organização.</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center mb-5 fw-bold">Nosso Cardápio</h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="nav-link active text-colored">Bebidas Não Alcoólicas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="nav-link text-colored">Bebidas Alcoólicas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="nav-link text-colored">Entradas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="nav-link text-colored">Pratos Principais</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav-link text-colored">Sobremesas</button>
+                    </nav>
+                </aside>
+
+                <div class="col-md-10">
+                    <div class="tab-content">
+
+        <div class="tab-pane fade show active" id="bebidas-sem-alcool">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/bebidas/coca-cola.jpg" alt="">
+                    <h4 class="text-center mt-2">Refrigerante Lata</h4>
+                    <p>Refrescante e versátil, nosso refrigerante em lata é servido sempre bem gelado para garantir o máximo de sabor.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/bebidas/suco.jpg" alt="">
+                    <h4 class="text-center mt-2">Suco natural</h4>
+                    <p>Nossos sucos são preparados com frutas frescas, oferecendo um sabor natural e revigorante a cada gole.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade show" id="bebidas-alcoolicas">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/bebidas/cerveja.jpg" alt="">
+                    <h4 class="text-center mt-2">Cerveja</h4>
+                    <p>Clássica, leve e refrescante — servida sempre bem gelada.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/bebidas/vinho.jpg" alt="">
+                    <h4 class="text-center mt-2">Vinho</h4>
+                    <p>Vinhos selecionados com aromas envolventes e sabores equilibrados.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="entradas">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/entradas/entrada.jpg" alt="">
+                <p class="text-center mt-3">Nossas entradas foram pensadas para despertar o paladar e preparar você para a experiência do Terra & Brasa. Uma seleção harmoniosa de sabores clássicos e marcantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pratos-principais">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/pratos/pizza.jpg" alt="">
+                <p class="text-center mt-3">Nossas pizzas são preparadas com massa de fermentação adequada, resultando em leveza, sabor e textura perfeitos.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/pratos/salmao.jpg" alt="">
+                <p class="text-center mt-3">Nosso salmão é preparado com cuidado para preservar sua maciez natural e seu sabor marcante. Grelhado ou assado no ponto perfeito, ele ganha destaque pela suculência e pelo leve toque dourado que realça sua textura.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="sobremesas">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/sobremesas/cupcake.jpg" alt="">
+                    <p>Delicado e cheio de charme, nosso cupcake combina massa macia com cobertura cremosa e saborosa, criando uma experiência doce na medida certa.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <img class="d-block w-100" src="./images/cardapio/sobremesas/bolo.jpg" alt="">
+                    <p>Nosso bolo é feito com receitas tradicionais que valorizam textura fofinha, aroma caseiro e sabores acolhedores. Cada fatia traz o equilíbrio ideal entre maciez e sabor, tornando o doce uma escolha perfeita para encerrar sua visita ao Terra & Brasa.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
