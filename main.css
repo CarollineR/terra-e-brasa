@@ -1,5 +1,12 @@
 :root {
 --header-height: 96px;
+
+    --cor-primaria: #8B4513;     /* Terracota profundo */
+    --cor-secundaria: #3B1F17;   /* Marrom café */
+    --cor-destaque: #C08A54;     /* Cobre suave */
+    --cor-fundo-claro: #E8DCC2;  /* Areia */
+    --cor-cinza: #5C5046;
+    --cor-preto: #1A1A1A;
 }
 
 section {
@@ -9,18 +16,19 @@ scroll-margin-top: calc(var(--header-height) + 16px);
 
 body {
     font-family: 'Shadows Into Light', cursive;
+    color: var(--cor-preto);
 }
 
 .navbar {
-    background-color: #8B4513;
+    background-color: var(--cor-secundaria);
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
 }
 
 #cabecalho .nav .nav-link.active {
-    background-color: #FFFFFF;
+    background-color: var(--cor-destaque);
     font-weight: bold;
-    color: #8B4513;
+    color: var(--cor-primaria);
 }
 
 #cabecalho .nav .nav-link,
@@ -37,16 +45,16 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #4b2e05;
+    background-color: var(--cor-secundaria);
 }
 
 #menu-navegacao .nav-link:hover {
-    background-color: #D2B48C;
-    color: #8B4513;
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
 }
 
 .carousel-indicators [data-bs-target] {
-background-color: #a0522d; 
+background-color: var(--cor-secundaria); 
 width: 12px;
 height: 12px;
 border-radius: 50%;
@@ -54,32 +62,32 @@ opacity: 0.5;
 }
 
 .carousel-indicators .active {
-background-color: #4b2e05; 
+background-color: var(--cor-secundaria); 
 opacity: 1;
 }
 
 .section-title span {
-    color: #8B4513;
+    color: var(--cor-secundaria);
 }
 
 .text-colored {
-    color: #8B4513;
+    color: var(--cor-secundaria);
 }
 
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #8B4513;
+    background-color: var(--cor-primaria);
     font-weight: bold;
     color: #FFFFFF;
 }
 
 .nav-cardapio .nav-link.active:hover {
-    background-color: #8B4513;
-    color: #4b2e05;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 #sobre-o-restaurante, #cardapio {
-    background-color: #dec8aa;
+    background-color: var(--cor-fundo-claro);
 }
 
 .social-links li {
@@ -91,7 +99,24 @@ opacity: 1;
     text-decoration: none;
 }
 
-@meda (max-width: 767px){
+.nav-cardapio .nav-link {
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: all .3s ease;
+}
+
+#fale-conosco button {
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+img {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 767px){
     .carousel-item img {
         height:280px;
     }
