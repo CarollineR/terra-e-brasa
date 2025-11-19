@@ -14,8 +14,8 @@ Organização de arquivos e boas práticas de desenvolvimento front-end;
 
 Tecnologias Utilizadas
 
-HTML5
-CSS3
-Bootstrap 5.3
-Google Fonts
-Font Awesome / Ícones (caso utilizado)
+HTML5;
+CSS3;
+Bootstrap 5.3;
+Google Fonts;
+Font Awesome / Ícones (caso utilizado).
